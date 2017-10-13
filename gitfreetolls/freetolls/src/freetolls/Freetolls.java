@@ -21,22 +21,23 @@ public class Freetolls extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
+        Button botao = new Button();
+        botao.setText("Seja bem vindo");
+        botao.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
+                System.out.println("Funcionou");
             }
         });
         
         StackPane root = new StackPane();
-        root.getChildren().add(btn);
+        root.getChildren().add(botao);
         
-        Scene scene = new Scene(root, 300, 250);
         
-        primaryStage.setTitle("Hello World!");
+        Scene scene = new Scene(root, 800, 600);
+        
+        primaryStage.setTitle("FreeTolls - Aplicações");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
